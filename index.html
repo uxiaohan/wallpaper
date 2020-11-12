@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="robots" content="noarchive">
+    <title>电脑壁纸 - 韩小韩壁纸</title>
+    <link rel='stylesheet' id='style-css' href='static/css/style.css' type='text/css' />
+    <link rel='stylesheet' id='fonts-css' href='static/css/iconfont.css' type='text/css' />
+    <link rel='stylesheet' id='fancybox-css' href='static/css/jquery.fancybox.min.css' type='text/css' />
+    <script type='text/javascript' src='static/js/jquery.min.js'></script>
+    <script type='text/javascript' src='static/js/jquery-migrate.min.js'></script>
+    <meta name='description' content='包含4K壁纸,美女壁纸,美女图片,风景壁纸,动漫壁纸,明星图片,动物图片,动物壁纸,游戏壁纸,等18个分类的电脑壁纸，支持放大预览和下载。' />
+    <meta name='keywords' content='4K壁纸,美女壁纸,美女图片,风景壁纸,动漫壁纸,明星图片,动物图片,动物壁纸,游戏壁纸,必应壁纸,bing壁纸,必应美图' />
+    <style type='text/css'>
+        html {
+            --accent-color: #4370F5;
+        }
+
+        .site-main {
+            min-height: 700px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="site">
+        <header class="site-header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="hamburger">
+                        <div class="hamburgerli"></div>
+                    </div>
+                    <div class="branding-within"> <a class="logo" href="" rel="home"><img
+                                src="https://www.vvhan.com/usr/themes/Akina/images/Logo.png" alt="韩小韩博客"></a> </div>
+                    <nav class="main-menu hidden-xs hidden-sm hidden-md">
+                        <ul id="menu-primary" class="nav-list u-plain-list">
+                            <li id="menu-item-1047"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1047">
+                                <a href="https://www.vvhan.com/" target="_blank">韩小韩博客</a></li>
+                            <li id="menu-item-1067"
+                                class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1067"><a
+                                    href="https://api.vvhan.com/" target="_blank">韩小韩API接口</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="off-canvas">
+            <div class="mobile-menu"> </div>
+            <div class="close"> <i class="iconfont icon-guanbi1"></i> </div>
+        </div>
+        <div class="site-content container">
+            <div class="row">
+                <div class="col-lg-img">
+                    <div class="wallpaper-tags">
+                        <ul>
+                            <li data-id="36" onclick="loadData(36, true);changeTitle(this)">4K专区</li>
+                            <li data-id="6" onclick="loadData(6, true);changeTitle(this)">美女模特</li>
+                            <li data-id="30" onclick="loadData(30, true);changeTitle(this)">爱情美图</li>
+                            <li data-id="9" onclick="loadData(9, true);changeTitle(this)">风景大片</li>
+                            <li data-id="15" onclick="loadData(15, true);changeTitle(this)">小清新</li>
+                            <li data-id="26" onclick="loadData(26, true);changeTitle(this)">动漫卡通</li>
+                            <li data-id="11" onclick="loadData(11, true);changeTitle(this)">明星风尚</li>
+                            <li data-id="14" onclick="loadData(14, true);changeTitle(this)">萌宠动物</li>
+                            <li data-id="5" onclick="loadData(5, true);changeTitle(this)">游戏壁纸</li>
+                            <li data-id="12" onclick="loadData(12, true);changeTitle(this)">汽车天下</li>
+                            <li data-id="10" onclick="loadData(10, true);changeTitle(this)">炫酷时尚</li>
+                            <li data-id="29" onclick="loadData(29, true);changeTitle(this)">月历壁纸</li>
+                            <li data-id="7" onclick="loadData(7, true);changeTitle(this)">影视剧照</li>
+                            <li data-id="13" onclick="loadData(13, true);changeTitle(this)">节日美图</li>
+                            <li data-id="22" onclick="loadData(22, true);changeTitle(this)">军事天地</li>
+                            <li data-id="16" onclick="loadData(16, true);changeTitle(this)">劲爆体育</li>
+                            <li data-id="18" onclick="loadData(18, true);changeTitle(this)">BABY秀</li>
+                            <li data-id="35" onclick="loadData(35, true);changeTitle(this)">文字控</li>
+                        </ul>
+                    </div>
+                    <div class="content-area">
+                        <main class="site-main">
+                            <article class="type-post post-wallpaper">
+                                <div class="container-wallpaper">
+                                    <div class="jigsaw" id="walBox"></div>
+                                    <div id="loadmore">壁纸加载中……</div>
+                                </div>
+                            </article>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="site-footer">
+            <div class="site-info"> <a class="footerlogo" href="https://www.vvhan.com" target="_blank"><img
+                        src="https://api.vvhan.com/static/img/logo.png" alt="韩小韩博客"></a>
+                <div class="site-infor">
+                    <a href="https://v.vvhan.com" target="_blank">小韩影视</a>
+                    |<script type="text/javascript"
+                        src="https://s23.cnzz.com/z_stat.php?id=1276399794&web_id=1276399794"></script>
+                </div>
+            </div>
+            <div class="site-info">
+                <div class="site-infol"> 本站部分内容来源于互联网，如有侵犯贵司或您的权益，请联系本站管理员！<a class="footerlogo" style="color:#ffffff"
+                        href="https://api.vvhan.com" target="_blank">由韩小韩API接口提供技术支持</a> </div>
+                <div class="site-infor"> ©2019-2020<a rel="nofollow" target="_blank"
+                        href="https://beian.miit.gov.cn/">苏ICP备17017222号</a> </div>
+            </div>
+        </footer>
+    </div>
+    <div class="gotop"> <a id="goTopBtn" href="javascript:;"><i class="iconfont icon-shang"></i><em>返回顶部</em></a></div>
+    <script type='text/javascript' src='static/js/hans.min.js'></script>
+    <script type='text/javascript' src='static/js/jquery.fancybox.min.js'>
+    </script>
+    <script type='text/javascript' src='static/js/jquery.lazyload.min.js'>
+    </script>
+    <script type='text/javascript' src='static/js/img.js'></script>
+    <script type="text/javascript">
+        var a_idx = 0;
+        jQuery(document).ready(function ($) {
+            $("body").click(function (e) {
+                var a = new Array("❤");
+                var $i = $("<span/>").text(a[a_idx]);
+                a_idx = (a_idx + 1) % a.length;
+                var x = e.pageX,
+                    y = e.pageY;
+                $i.css({
+                    "z-index": 999999999999999999999999999,
+                    "top": y - 20,
+                    "left": x,
+                    "position": "absolute",
+                    "font-weight": "bold",
+                    "color": "#dd3333"
+                });
+                $("body").append($i);
+                $i.animate({
+                    "top": y - 180,
+                    "opacity": 0
+                }, 1500, function () {
+                    $i.remove();
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
